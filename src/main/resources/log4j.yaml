@@ -1,0 +1,8 @@
+log4j:
+ rootLogger: INFO, stdout, file
+ category.org.springframework: WARN
+ appender:
+   stdout: org.apache.log4j.ConsoleAppender
+   stdout.target: System.out
+   stdout.layout: org.apache.log4j.PatternLayout
+   stdout.layout.ConversionPattern: %d{HH:mm:ss} %5p [%t] (%F:%L) %M - %m%n
